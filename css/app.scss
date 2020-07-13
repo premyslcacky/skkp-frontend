@@ -1,0 +1,38 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Taviraj:wght@400;600&display=swap');
+
+// reset layer
+@import 'reset/_reset.scss';
+
+// default variables, functions etc.
+@import 'base/_base.scss';
+
+// base component
+@import 'components/_component-base.scss';
+// header component
+@import 'components/_component-header.scss';
+// cultural heroes component
+@import 'components/_component-cultural-heroes.scss';
+// strategy component
+@import 'components/_component-strategy.scss';
+// map phase strategy component
+@import 'components/_component-phase-strategy.scss';
+// map practice component
+@import 'components/_component-map-practice.scss';
+// creative-incubator component
+@import 'components/_component-creative-incubator.scss';
+// communication-platform component
+@import 'components/_component-communication-platform.scss';
+// project team component
+@import 'components/_component-project-team.scss';
+// expert-team component
+@import 'components/_component-expert-team.scss';
+// coordinators component
+@import 'components/_component-coordinators.scss';
+
+// footer component
+@import 'components/_component-footer.scss';
+
+
+// com-plat-app component
+@import 'components/_component-com-plat-app.scss';

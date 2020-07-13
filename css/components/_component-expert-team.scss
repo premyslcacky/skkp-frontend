@@ -1,0 +1,84 @@
+#section-expert-team {
+    padding: rem-calc(70 10);
+    background-color: $color-blue-def;
+
+    @media (min-width: 640px) {
+        padding: rem-calc(70 20);
+    }
+
+    @media (min-width: 1024px) {
+        padding: rem-calc(70 30);
+    }
+
+    h2 {
+        width: 100%;
+        max-width: rem-calc(400);
+        color: $color-white;
+    }
+
+    .people-list {
+        margin: rem-calc(50) auto rem-calc(0) auto;
+        width: 100%;
+        max-width: rem-calc(600);
+
+        .cols {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+        }        
+        
+        .col-l, .col-r {
+            flex: 0 0 100%;
+    
+            @media (min-width: 1024px) {
+                flex: 0 0 50%;
+            }
+        }
+
+        .col-l {
+            padding-right: rem-calc(0);
+
+            @media (min-width: 1024px) {
+                padding-right: rem-calc(40);
+            }
+        }
+
+        .col-r {
+            padding-left: rem-calc(0);
+
+            @media (min-width: 1024px) {
+                padding-left: rem-calc(40);    
+            }
+        }
+
+        ul {
+            display: block;
+            li {
+                display: block;
+                margin: rem-calc(20 0);
+            }
+
+            li:last-of-type {
+                margin-bottom: rem-calc(0);
+            }
+        }
+
+        .name {
+            display: block;
+            margin: rem-calc(5 0);
+            font-size: rem-calc(17);
+            font-weight: 700;
+            line-height: 1.3;
+            color: $color-white;
+            text-align: center;
+
+            @media (min-width: 1024px) {
+                text-align: left;
+            }
+            
+        }
+
+    }
+    
+}

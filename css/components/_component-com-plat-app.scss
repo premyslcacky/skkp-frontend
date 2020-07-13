@@ -1,0 +1,570 @@
+#section-com-plat-app {
+    padding: rem-calc(20 0 50 0);
+    
+    .wrap {        
+        min-height: 60vh;
+        max-width: rem-calc(1200);
+    }
+
+    .btn-admin-delete, .btn-user-info {
+        display: inline-block;
+        padding: rem-calc(5 10);
+        //border-radius: 10px;
+        font-size: rem-calc(12);   
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: 2px;        
+        text-transform: uppercase;
+        text-decoration: none;
+        
+        @media (min-width: 640px) {
+            font-size: rem-calc(13);
+        }
+    }
+
+    .forum-form {
+        margin-top: rem-calc(20);          
+        background-color: $color-aquamarine-light;
+        padding: rem-calc(20 0);
+
+        .box {
+            margin: 0px auto;
+            width: 100%;
+            max-width: rem-calc(600);
+            padding: rem-calc(0 10);
+
+            .label {
+                p {
+                    text-align: center;
+                }
+            }
+
+            .form-box {
+                .cols {
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    .col-input {
+                        width: 100%;
+
+                        .row {
+                            width: 100%;
+                            flex: 0 0 100%;
+                            padding-top: rem-calc(15);
+
+                            .ck-editor {
+                                                                
+                            }
+
+                            .ck-toolbar {
+                                border: 0;
+                                border-top-left-radius: 5px;
+                                border-top-right-radius: 5px;
+                                background-color: rgb(243, 243, 243);
+                            }
+
+                            .ck-editor.ck-rounded-corners {
+                                border-radius: 5px;
+                            }
+
+                            .ck-content.ck-editor__editable {
+                                min-height: rem-calc(180);
+                                border: 0;
+                                border-bottom-left-radius: 5px;
+                                border-bottom-right-radius: 5px;
+
+                                p {
+                                    font: $font-family;
+                                    line-height: 1.3;
+                                    font-size: rem-calc(14);
+                                    letter-spacing: 0px; 
+                                    text-align: left;
+        
+                                    @media (min-width: 640px) {
+                                        font-size: rem-calc(15);
+                                    }
+                    
+                                    @media (min-width: 1024px) {
+                                        font-size: rem-calc(16);
+                                    }
+        
+                                    strong {
+                                        font-weight: 700;
+                                    }
+            
+                                    i {
+                                        font-style: italic;
+                                    }
+            
+                                    a {
+                                        color: $color-blue-def;
+                                        font-weight: 500;
+                                        text-decoration: underline;
+                                    }
+                                    a:hover {
+                                        text-decoration: none;
+                                    }                                    
+                                }
+
+                                ul, ol {
+                                    list-style-position: inside;
+
+                                    >li {
+                                        line-height: 1.3;
+                                        font-size: rem-calc(14);                                    
+        
+                                        @media (min-width: 640px) {
+                                            font-size: rem-calc(15);
+                                        }
+                        
+                                        @media (min-width: 1024px) {
+                                            font-size: rem-calc(16);
+                                        }
+                                    }
+                                }
+
+                                ul {
+                                    list-style-type: disc;
+                                }
+        
+                                ol {
+                                    list-style-type:decimal;                                    
+                                }
+
+                                table {
+                                    border-collapse: collapse;
+        
+                                    tr {
+                                        th, td {
+                                            padding: rem-calc(4 8);
+                                            border: 1px solid rgb(167, 167, 167);                                    
+                                        }
+                                        th {
+                                            background-color: rgb(240, 240, 240);
+                                            font-weight: 500;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .ck-content.ck-editor__editable.ck-focused {
+                                box-shadow: none;
+                            }
+
+
+                            input, textarea {
+                                display: block;
+                                width: 100%;
+                                font-size: rem-calc(15);
+                                padding: rem-calc(4 8);
+                                color: $color-blue-def;
+                                border: 1px solid $color-white;
+                                border-radius: 5px;
+                                transition: border-color 0.3s;
+    
+                                @media (min-width: 640px) {
+                                    font-size: rem-calc(16);
+                                }
+                            }
+
+                            input.error, textarea.error {
+                                border: 1px solid $color-email-error;
+                            }
+
+                            .checkbox-box {
+                                display: flex;
+
+                                input.checbox {
+                                    width: initial;
+                                    flex: 0 0 auto;
+                                    margin: rem-calc(2 10 0 0);
+                                    border: 1px solid $color-white;
+                                    transition: border-color 0.3s;
+                                }
+
+                                input.checbox.error {
+                                    border: 1px solid $color-email-error;
+                                }
+
+                                label {
+                                    flex: 1 1 0px;
+                                    text-align: left;
+
+                                    font-size: rem-calc(12);
+
+                                    @media (min-width: 640px) {
+                                        font-size: rem-calc(13);
+                                    }
+                                }
+                            }
+
+                            .error-msg {
+                                padding-top: rem-calc(5);
+                                text-align: left;
+                                color: $color-email-error;
+
+                                font-size: rem-calc(13);
+
+                                @media (min-width: 640px) {
+                                    font-size: rem-calc(14);
+                                }
+                            }
+                        }
+                        
+                    }
+
+                    .col-button {
+                        flex: 0 0 100%;
+                        padding-top: rem-calc(15);
+                        text-align: right;
+
+                        button {                        
+                        }
+
+                        .error-msg {
+                            padding-bottom: rem-calc(10);
+                            text-align: left;
+                            color: $color-email-error;
+
+                            font-size: rem-calc(13);
+
+                            @media (min-width: 640px) {
+                                font-size: rem-calc(14);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .sign-info {
+
+            }
+        }
+
+        .box.editor {
+            max-width: rem-calc(800);
+        }
+
+        .box.narrow {
+            max-width: rem-calc(400);
+        }
+    }  
+    
+    
+    .user-info {
+        .logged-in, .logged-out {
+            text-align: right;
+        }
+
+        .logged-in {
+            
+        }
+
+        .logged-out {
+            button {
+                margin-left: rem-calc(10);
+            }
+        }
+    }
+
+
+
+    .welcome-header {
+        margin-top: rem-calc(50); 
+
+        h1 {
+            font-weight: 500;
+            font-size: rem-calc(36);
+            letter-spacing: 1.2px;
+
+            @media (min-width: 640px) {
+                font-size: rem-calc(42);
+                letter-spacing: 1.6px;
+            }
+
+            @media (min-width: 1024px) {
+                font-size: rem-calc(48);
+                letter-spacing: 2px;
+            }
+        }
+    }
+    
+    .topic-list {
+        margin-top: rem-calc(30);      
+
+        .title {            
+            p {
+                text-align: center;
+            }
+        }
+
+        ul {
+            margin-top: rem-calc(10);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            li {
+                flex: 0 0 auto;  
+                padding: rem-calc(5 5); 
+                
+                button {
+                    padding: rem-calc(8 20);
+                }
+            }
+        }
+        
+    }
+
+    .subtopic-list {
+        margin-top: rem-calc(30); 
+        
+        .title {
+            p {
+                text-align: center;
+            }
+        }
+
+        ul {
+            margin-top: rem-calc(10);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            li {
+                flex: 0 0 auto;
+                padding: rem-calc(5 5);
+
+                button {
+                    padding: rem-calc(5 15);
+                    text-transform: none;
+
+                    font-size: rem-calc(13);
+
+                    @media (min-width: 640px) {
+                        font-size: rem-calc(14);
+                    }
+                }
+            }
+        }
+
+        
+
+        .forum-form {
+            margin-top: rem-calc(20);
+        }
+        
+    }
+
+
+    .message-list {
+        margin-top: rem-calc(30); 
+        
+        .title {
+            padding-top: rem-calc(20); 
+
+            .admin-bar {
+                margin-bottom: rem-calc(10);
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+
+                .button-box {
+                    flex: 0 0 auto;
+                }
+                
+                button {
+                    display: block;                            
+                    margin: rem-calc(5 0 5 10);
+                }
+            }
+
+            h2 {
+                font-weight: 500;
+                font-size: rem-calc(26);
+                letter-spacing: 1.2px;
+
+                @media (min-width: 640px) {
+                    font-size: rem-calc(32);
+                    letter-spacing: 1.6px;
+                }
+
+                @media (min-width: 1024px) {
+                    font-size: rem-calc(38);
+                    letter-spacing: 2px;
+                }
+            }
+        }
+
+        ul.list {
+            margin-top: rem-calc(30);
+            display: flex;
+            flex-wrap: wrap;
+            //justify-content: center;
+
+            >li {
+                flex: 0 0 100%;
+                padding: rem-calc(20 0);
+                border-bottom: 1px solid $color-blue-def;
+                text-align: left;
+
+                .message {
+
+                    .admin-bar {
+                        margin-bottom: rem-calc(10);
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: flex-end;
+
+                        .button-box {
+                            flex: 0 0 auto;
+                        }
+                        
+                        button {
+                            display: block;                            
+                            margin: rem-calc(5 0 5 10);
+                        }
+                    }
+
+                    .header {
+                        padding-bottom: rem-calc(20);
+                        text-align: center;
+
+                        @media (min-width: 640px) {
+                            text-align: left;
+                        }
+
+                        .author {
+                            font-weight: 700;
+                            font-size: rem-calc(15);
+
+                            @media (min-width: 640px) {
+                                font-size: rem-calc(16);
+                            }
+            
+                            @media (min-width: 1024px) {
+                                font-size: rem-calc(17);
+                            }
+                        }
+
+                        .date {
+                            font-weight: 500;
+                            font-size: rem-calc(15);
+                            padding-left: rem-calc(10);
+
+                            @media (min-width: 640px) {
+                                font-size: rem-calc(16);
+                            }
+            
+                            @media (min-width: 1024px) {
+                                font-size: rem-calc(17);
+                            }
+                        }
+                    }
+
+                    .text {                        
+                        text-align: center;
+
+                        @media (min-width: 640px) {
+                            text-align: left;
+                        }                    
+
+                        p {
+                            line-height: 1.3;
+                            font-size: rem-calc(14);
+                            letter-spacing: 0px;   
+
+                            @media (min-width: 640px) {
+                                font-size: rem-calc(15);
+                            }
+            
+                            @media (min-width: 1024px) {
+                                font-size: rem-calc(16);
+                            }
+
+                            strong {
+                                font-weight: 700;
+                            }
+    
+                            i {
+                                font-style: italic;
+                            }
+    
+                            a {
+                                color: $color-blue-def;
+                                font-weight: 500;
+                                text-decoration: underline;                                
+                            }
+                            a:hover {
+                                text-decoration: none;
+                            }
+                        }
+
+                        ul, ol {
+                            margin-left: rem-calc(20);
+                            list-style-position: outside;
+
+                            >li {
+                                line-height: 1.3;
+                                font-size: rem-calc(14);                                    
+
+                                @media (min-width: 640px) {
+                                    font-size: rem-calc(15);
+                                }
+                
+                                @media (min-width: 1024px) {
+                                    font-size: rem-calc(16);
+                                }
+                            }
+                        }
+
+                        ul {
+                            list-style-type: disc;
+                        }
+
+                        ol {
+                            list-style-type:decimal;                                    
+                        }
+
+                        table {
+                            border-collapse: collapse;
+
+                            tr {
+                                th, td {
+                                    padding: rem-calc(4 8);
+                                    border: 1px solid rgb(167, 167, 167);                                    
+                                }
+                                th {
+                                    background-color: rgb(240, 240, 240);
+                                    font-weight: 500;
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+
+                .message-empty {
+
+                    .text {
+                        text-align: center;
+                        font-size: rem-calc(15);
+
+                        @media (min-width: 640px) {
+                            font-size: rem-calc(16);
+                        }
+        
+                        @media (min-width: 1024px) {
+                            font-size: rem-calc(17);
+                        }
+                    }
+                }
+            }
+        }
+
+        .forum-form {
+            margin-top: rem-calc(50);
+        }
+        
+    }
+}

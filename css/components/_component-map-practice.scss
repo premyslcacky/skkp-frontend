@@ -1,0 +1,35 @@
+#section-map-practice {
+    padding: rem-calc(70 10);
+    background-color: $color-blue-def;
+
+    @media (min-width: 640px) {
+        padding: rem-calc(70 20);
+    }
+
+    @media (min-width: 1024px) {
+        padding: rem-calc(70 30);
+    }
+
+    h2 {
+        width: 100%;
+        max-width: rem-calc(400);
+        color: $color-white;
+    }
+
+    p.note {
+        margin-top: rem-calc(60);
+        text-align: center;
+        font-style: italic;
+        color: rgb(228, 228, 228);
+    }
+
+    #map-practice {
+        margin-top: rem-calc(80);
+
+        img.map {
+            width: 100%;
+            max-width: rem-calc(722);
+        }
+    }
+}
+
